@@ -1,4 +1,4 @@
-@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
 
 :root {
   --red      : #ff3860;
@@ -43,4 +43,64 @@ body {
 
   background-color: var(--gray6);
   color: white;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+}
+
+.chart{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.graph-container{
+  display: grid;
+  grid-template-columns: 1fr 1000px;
+  margin: 0 4rem;
+  gap: 2rem;
+}
+
+.graph-inputs{
+  background-color: var(--gray5);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  padding: 1rem;
+  height: fit-content;
+
+  input{
+    max-height: 2em;
+    font-size: 20px;
+    background-color: var(--gray4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto 0;
+    appearance: textfield;
+  }
+
+  label{
+    font-size: 20px;
+    margin: auto 0;
+  }
+}
+
+.fire {
+  background: linear-gradient(30deg, #a10100, #fff75d);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: FireAnimation 11s ease infinite;
+  font-weight: bold;
+}
+
+@keyframes FireAnimation {
+  0%{background-position:0% 75%}
+  50%{background-position:100% 26%}
+  100%{background-position:0% 75%}
 }
